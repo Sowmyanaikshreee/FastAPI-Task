@@ -17,6 +17,12 @@ async function uploadImages() {
             method: "POST",
             body: formData
         });
+
+        if (response.ok) {
+            alert("Image uploaded successfully!");  // Show alert on successful upload
+        } else {
+            alert("Error uploading image. Please try again.");
+        }
  
         let data = await response.json();
        
