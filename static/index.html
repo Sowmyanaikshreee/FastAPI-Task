@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+
+    <h2>Image Upload</h2>
+
+    <div class="upload-container">
+        <h3>Upload Images</h3>
+        <input type="file" id="fileInput" multiple>
+        <button onclick="uploadImages()">Upload</button>
+
+        <h3>Display Image</h3>
+        <input type="text" id="imageFilenameInput" placeholder="Enter image filename">
+        <button onclick="fetchAndDisplayImage()">Display Image</button>
+    </div>
+
+    <h3>Uploaded Images</h3>
+    <div id="imageContainer"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
